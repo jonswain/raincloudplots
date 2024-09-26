@@ -22,8 +22,8 @@ def raincloud_plot(
         show_boxes (bool): Whether to show boxplots. Defaults to True.
         x_log_scale (bool): Whether to use a log scale for the x-axis. Defaults to False.
     """
-    number_of_features = len(features)
     data_selection = data[features].select_dtypes(include=[np.number])
+    number_of_features = len(data_selection.columns)
     colours = list(mcolors.TABLEAU_COLORS.values())
     rain_offset = 0.15
 
