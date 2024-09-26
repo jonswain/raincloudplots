@@ -1,0 +1,8 @@
+name: raincloud_plot
+
+dependencies:
+  - matplotlib
+  - numpy
+  - pandas
+  - python
+  - scikit-learn
